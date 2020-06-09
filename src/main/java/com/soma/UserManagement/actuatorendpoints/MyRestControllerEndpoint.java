@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RestControllerEndpoint(id = "restEndpoint")
 public class MyRestControllerEndpoint {
-    @GetMapping
+    @GetMapping()
     public ResponseEntity<String> getResponse() {
         return new ResponseEntity<>("RestController Response endpoint", HttpStatus.OK);
     }
